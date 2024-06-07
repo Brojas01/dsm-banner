@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos DSM</title>
+    <link rel="icon" href="../img/logo-modified.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo-contactos.css">
+</head>
+
+<body>
+
+    <!-- banner -->
+
+    <div class="banner fixed-top">
+        <img style="width: 100%; " src="../img-tarjetas/banner.png">
+    </div>
+    
+    <!-- fin banner -->
+
+    <!-- Navbar -->
+    <nav style="margin-top: 10vh;" class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienes-somos.html">¿Quienes Somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="postas.html">Postas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="btn btn-secondary dropdown-toggle nav-link2" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Todas las Postas 
+                        </a>
+
+                        <ul style="background-color: black; border: 1px solid white;" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../postas-HTML/santabarbara.html">Santa Bárbara</a></li>
+                            <li><a class="dropdown-item" href="../postas-HTML/losjunquillos.html">Los Junquillos</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../postas-HTML/elhuachi.html">El Huachi</a></li>
+                            <li><a class="dropdown-item" href="../postas-HTML/losboldos.html">Los Boldos</a></li>
+                            <li><a class="dropdown-item" href="../postas-HTML/villucura.html">Villucura</a></li>
+                            <li><a class="dropdown-item" href="../postas-HTML/elcastillo.html">El Castillo</a></li>
+                            <li><a class="dropdown-item" href="../postas-HTML/"></a></li>
+                            <li><a class="dropdown-item" href="../postas-HTML/"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin Navbar -->
+
+
+    <!-- Header -->
+    <section class="sect1">
+        <div class="container informacion">
+            <div class="row row1">
+                <div class="col-md-12">
+                    <h2 style="color: rgb(0, 0, 0);"><b>Nuestras Redes de Contacto...</b></h2>
+                    <p style="color: #dabb11; font-weight: bold;"><i>Departamento Salud Municipal de Santa Bárbara</i></p>
+                    <hr>
+                    <p style="color: rgb(0, 0, 0)">¿Por donde nos puedes contactar? <br> El departamento de salud Municipal,
+                        ofrece una cercania a los clientes de una forma actualizada, ya que agilisamos el acceso hacia
+                        nuestro departamento.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-md-6 mb-4">
+                <div class="card custom-card">
+                    <img src="../img-tarjetas/logo-facebook.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">FACEBOOK</h5>
+                        <p class="card-text">Siguenos en Facebook para mantenerte al tanto de todo.</p>
+                        <a onclick="abrirNuevaPestana()" class="btn btn-warning">Siguenos :D</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-md-6 mb-4">
+                <div class="card custom-card">
+                    <img src="../img-tarjetas/logo-ig.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">INSTAGRAM</h5>
+                        <p class="card-text">A través de Instagram te mantendremos al tanto de noticias y actividades.
+                        </p>
+                        <a onclick="abrirNuevaPestanaIg()" class="btn btn-warning">Siguenos :D</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-md-6 mb-4">
+                <div class="card custom-card">
+                    <img src="../img-tarjetas/logo-correo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Correo Electrónico</h5>
+                        <p class="card-text">Puede contáctarnos por correo para resolver dudas o inquietudes.</p>
+                        <div class="container mt-5">
+                            <!-- Agrega el botón con el popover y aplica la clase personalizada -->
+                            <button type="button" class="btn btn-warning" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="bottom"
+                                data-bs-content="DepartamentoSM@santabarbara.cl" data-bs-custom-class="custom-popover">
+                                Ver Correo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-md-6 mb-4">
+                <div class="card custom-card">
+                    <img src="../img-tarjetas/logo-celular.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Telefonos</h5>
+                        <p class="card-text">Puedes llamar directamente por telefono al DSM.</p>
+                        <div class="container mt-5">
+                            <!-- Agrega el botón con el popover y aplica la clase personalizada -->
+                            <button type="button" class="btn btn-warning" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="bottom"
+                                data-bs-content=": 220973792 / 229828202" data-bs-custom-class="custom-popover">
+                                Ver Telefonos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="row row2">
+                <div class="col-md-12">
+                    <h2 style="color: #dabb11;"><b>¿Cuál es el objetivo?</b></h2>
+                    <p style="color: rgb(0, 0, 0);"><i>Hacemos tu vida mas sencilla...</i></p>
+                    <hr>
+                    <p style="color: rgb(0, 0, 0);">Como Departamento de la Salud Municipal, queremos que permanezcas informado
+                        sobre todo lo que sucede en Santa Bárbara y el resto de pueblos, y lograr una cercanía a
+                        nuestros usuarios, ademas que podran resolver sus dudas sin necesidad de salir de sus casas.
+                        Contáctanos por donde prefieras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Header -->
+
+    <!-- footer -->
+    <div class="pg-footer">
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-content-column">
+                    <div class="footer-logo">
+                        <a class="footer-logo-link" href="#">
+                            <span class="hidden-link-text"></span>
+                            <img style="height: 220px; width: 220px;" src="../img/logo-modified.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-content-column">
+                    <div class="footer-menu">
+                        <h2 class="footer-menu-name">Ubicanos</h2>
+                        <ul id="menu-quick-links" class="footer-menu-list">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                <a target="_blank" rel="noopener noreferrer">www.dsmsantabarbara.cl</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                <a target="_blank" rel="noopener noreferrer">Zenteno #337, santa barbara</a>
+                            </li>
+                    </div>
+
+                    <div class="footer-menu">
+                        <h2 class="footer-menu-name"> DSM</h2>
+                        <ul id="menu-get-started" class="footer-menu-list">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                                <a href="../Secciones-HTML/index.html">Home</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                                <a href="../Secciones-HTML/quienes-somos.html">¿Quienes Somos?</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                                <a href="../Secciones-HTML/noticias.html">Noticias</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                                <a href="../Secciones-HTML/postas.html">Postas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content-column">
+                    <div class="footer-menu">
+                        <h2 class="footer-menu-name">RRSS</h2>
+                        <ul id="menu-company" class="footer-menu-list">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a>Instagram: @dsm_santabarbara</a>
+                            </li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                                <a>Facebook: dsm_stabarbara</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a>Twitter: @dsm.santabarbara</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu">
+                        <h2 class="footer-menu-name">Telefonos</h2>
+                        <ul id="menu-legal" class="footer-menu-list">
+                            <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                                <a>: 2289832992</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a>: 2298191991</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content-column">
+                    <div class="footer-call-to-action">
+                        <h2 class="footer-call-to-action-title">Escribenos al correo</h2>
+                        <p class="footer-call-to-action-description">Tienes alguna pregunta?</p>
+                        <a class="footer-call-to-action-button button" href="contactos.html" target="_self">Redes de
+                            contacto</a>
+                    </div>
+                    <div class="footer-call-to-action">
+                        <h2 class="footer-call-to-action-title">Horarios:</h2>
+                        <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link"
+                                target="_self"> Lunes A Viernes: 08:30 AM - 17:30
+                                PM</a><br>Findesemana & Festivos: CERRADO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="footer-copyright-wrapper">
+                    <p class="footer-copyright-text">
+                        <a class="footer-copyright-link" href="#" target="_self"> ©2024. | Diseñado por B01 |
+                            Todos los derechos reservados. </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- fin footer -->
+
+
+    <!-- Enlaza jQuery (asegúrate de enlazarlo antes que el script de Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Enlaza los archivos JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        // Inicializa los popovers
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+
+
+        function abrirNuevaPestana() {
+            var url = "https://web.facebook.com/departamentosaludsantabarbara";
+            window.open(url, "_blank");
+        }
+
+        function abrirNuevaPestanaIg() {
+            var url = "https://www.instagram.com/municipalidaddesantabarbara/";
+            window.open(url, "_blank");
+        }
+
+    </script>
+</body>
+
+
+</html>

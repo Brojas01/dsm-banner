@@ -1,0 +1,485 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(255, 255, 255, 0.95);
+
+}
+
+
+.navbar {
+    background-color: #888787;
+    /* Cambiar color de fondo */
+}
+
+.navbar-nav {
+    margin: auto;
+    /* Centrar botones */
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    color: #000000;
+    font-size: 20px;
+    /* Cambiar color del texto de los elementos li */
+}
+
+.nav-link2 {
+    color: #000000;
+    font-size: 20px;
+    /* Cambiar color del texto de los elementos li */
+}
+
+.nav-link:hover {
+    color: #dabb11;
+    /* Cambiar color al pasar el mouse */
+}
+
+
+/* Cambiar el color del texto en los enlaces dentro del dropdown */
+.dropdown-menu .dropdown-item {
+    color: #aeafb0;
+    /* Color del texto */
+}
+
+/* Cambiar el color del fondo de los enlaces al pasar el mouse */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #383737;
+    /* Color de fondo al pasar el mouse */
+}
+
+/* Cambiar el color del botón dropdown */
+.dropdown-toggle {
+    color: #fff;
+    /* Color del texto del botón */
+    background-color: #000000;
+    /* Color de fondo del botón */
+    border-color: #000000;
+    /* Color del borde del botón */
+}
+
+/* Cambiar el color del botón dropdown al pasar el mouse */
+.dropdown-toggle:hover {
+    background-color: #dabb11;
+    /* Color de fondo del botón al pasar el mouse */
+    border-color: #ffffff;
+    /* Color del borde del botón al pasar el mouse */
+}
+
+
+@media (max-width:1200px) {
+    .nav-link {
+        font-size: 10px;
+
+    }
+
+    .nav-link2 {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .videoYT iframe {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+/* nabvar */
+
+
+
+
+
+/* head */
+.row1 {
+    padding: 35px;
+}
+
+.row1 hr {
+    border: solid rgb(0, 0, 0) 1px;
+}
+
+.row1 p{
+    text-align: justify;
+}
+
+
+.boton-2 a {
+    width: 300px;
+    font-size: 16px;
+}
+
+
+@media (max-width: 600px) {
+    .sect1 {
+        margin-top: 60%;
+    }
+}
+
+@media (min-width: 601px) {
+    .sect1 {
+        margin-top: 15%;
+    }
+}
+
+/* fin head */
+
+
+
+
+
+/* carrusel */
+
+.carousel-item img {
+    max-height: 600px;
+    border-radius: 5%
+}
+
+.carousel-item img {
+    opacity: 0.75; /* Ajusta el valor según el nivel de opacidad deseado (0 completamente transparente, 1 completamente opaco) */
+}
+
+/* Cambiar el color de las flechas del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Invertir el color de las flechas */
+}
+
+/* Ocultar los números debajo de los indicadores */
+.carousel-indicators {
+    list-style: none; /* Eliminar los marcadores */
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-indicators li {
+    width: 10px; /* Ajustar el espacio entre los indicadores */
+    height: 10px;
+    margin: 0 5px; /* Ajustar el espacio entre los indicadores */
+    background-color: rgb(255, 0, 0); /* Cambiar tu_color por el color deseado */
+    border-radius: 50%; /* Hacer los indicadores redondos */
+    border: none; /* Eliminar el borde */
+}
+
+.carousel-indicators .active {
+    width: 12px; /* Ajustar el tamaño del indicador activo */
+    height: 12px;
+    background-color: rgb(255, 238, 0); /* Cambiar tu_color_activo por el color deseado para el indicador activo */
+}
+
+/* fin carrusel */
+
+
+/* acordeon */
+
+
+.row3 {
+    padding: 35px;
+    text-align: center;
+    align-items: center;
+}
+
+.row3 hr {
+    border: solid rgb(255, 255, 255) .5px;
+}
+
+.row3 p {
+    text-align: justify;
+}
+
+.txtSubrrayado{
+    text-decoration: underline;
+}
+
+/* Ajuste del ancho del acordeón al 70% de la pantalla */
+.accordion {
+    width: 65%;
+    margin: auto; /* Centra el acordeón horizontalmente */
+  }
+  
+  /* Cambiar color de fondo de los elementos del acordeón */
+  .accordion-item {
+    background-color: #d9e283; /* Color de fondo del acordeón */
+  }
+  
+  /* Cambiar color de fondo de los botones del acordeón */
+  .accordion-button {
+    background-color: #dabb11; /* Color de fondo del botón del acordeón */
+    color: #000000; /* Color del texto del botón del acordeón */
+    font-weight: bold;
+  }
+  
+  /* Cambiar color de fondo de los cuerpos del acordeón */
+  .accordion-body {
+    background-color: #fffff3; /* Color de fondo del cuerpo del acordeón */
+    color: #212529; /* Color del texto del cuerpo del acordeón */
+  }
+  
+  /* Cambiar color del borde del acordeón */
+  .accordion-item {
+    border: 1px solid #000000; /* Color del borde del acordeón */
+  }
+
+/* Fin acordeon */
+
+/* Cambiar color de fondo del botón del acordeón cuando está activo */
+.accordion-item:not(:last-child) .accordion-button:not(.collapsed) {
+    background-color: #f39200; /* Puedes cambiar este color según tu preferencia */
+  }
+  
+  /* Cambiar color del texto del botón del acordeón cuando está activo */
+  .accordion-item:not(:last-child) .accordion-button:not(.collapsed) {
+    color: #000000; /* Puedes cambiar este color según tu preferencia */
+  }
+
+
+/* FOOTER */
+
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.pg-footer {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10%;
+}
+
+
+.footer {
+    background-color: #888787;
+    color: #000000;
+}
+
+.footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 450px;
+    position: relative;
+}
+
+.footer-content-column {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    color: #000000;
+}
+
+.footer-content-column ul li a {
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.footer-logo-link {
+    display: inline-block;
+}
+
+.footer-menu {
+    margin-top: 30px;
+}
+
+.footer-menu-name {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.footer-menu-list {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.footer-menu-list li {
+    margin-top: 5px;
+}
+
+.footer-call-to-action-description {
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-call-to-action-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.button:last-of-type {
+    margin-right: 0;
+}
+
+.footer-call-to-action-button {
+    background-color: #000000;
+    border-radius: 21px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    padding: 12px 30px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .89s;
+    cursor: pointer;
+    position: relative;
+}
+
+.footer-call-to-action {
+    margin-top: 30px;
+}
+
+.footer-call-to-action-title {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.footer-call-to-action-link-wrapper {
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-call-to-action-link-wrapper a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.hidden-link-text {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+    top: 50%;
+}
+
+
+.footer-copyright {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.footer-copyright-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.footer-copyright-text {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.footer-copyright-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+@media (min-width:320px) and (max-width:479px) {
+
+    .footer-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1230px;
+        padding: 40px 15px 1050px;
+        position: relative;
+    }
+}
+
+@media (min-width:480px) and (max-width:599px) {
+
+
+    .footer-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1230px;
+        padding: 40px 15px 1050px;
+        position: relative;
+    }
+}
+
+@media (min-width:600px) and (max-width: 800px) {
+
+
+    .footer-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1230px;
+        padding: 40px 15px 1050px;
+        position: relative;
+    }
+}
+
+@media (min-width:801px) {}
+
+@media (min-width:1025px) {}
+
+@media (min-width:1281px) {}
+
+
+@media (min-width: 760px) {
+    .footer-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1230px;
+        padding: 40px 15px 450px;
+        position: relative;
+    }
+
+    .footer-wave-svg {
+        height: 50px;
+    }
+
+    .footer-content-column {
+        width: 24.99%;
+    }
+}
+
+@media (min-width: 568px) {
+    /* .footer-content-column {
+		width: 49.99%;
+	} */
+}
+
+/* Fin Footer */

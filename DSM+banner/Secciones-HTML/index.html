@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagina Web DSM</title>
+    <link rel="icon" href="../img/logo-modified.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="../js/script.js"></script>
+
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner fixed-top">
+        <img style="width: 100%; " src="../img-tarjetas/banner.png">
+    </div>
+    <!-- fin banner -->
+    
+    <!-- Navbar --> 
+    
+    <nav style="margin-top: 10vh;" class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactos.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienes-somos.html">¿Quienes Somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="postas.html">Postas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="btn btn-secondary dropdown-toggle nav-link2" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Todas las Postas
+                        </a>
+
+                        <ul style="background-color: black; border: 1px solid rgb(0, 0, 0);" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../postas-HTML/santabarbara.html">Santa Bárbara</a></li>
+                            <li><a class="dropdown-item" href="../postas-HTML/losjunquillos.html">Los Junquillos</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../postas-HTML/elhuachi.html">El Huachi</a></li>
+                            <li><a class="dropdown-item" href="../postas-HTML/losboldos.html">Los Boldos</a></li>
+                            <li><a class="dropdown-item" href="../postas-HTML/villucura.html">Villucura</a></li>
+                            <li><a class="dropdown-item" href="../postas-HTML/elcastillo.html">El Castillo</a></li>
+                            <li><a class="dropdown-item" href="../postas-HTML/"></a></li>
+                            <li><a class="dropdown-item" href="../postas-HTML/"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <!-- Fin Navbar -->
+
+    <!-- banner lateral izquierdo nº1-->
+    <div class="banner-li-1">
+        <img class="img-banner-li-1" src="../img-tarjetas/banner.png">
+    </div>
+    <!-- banner lateral izquierdo nº1 -->
+
+    <!-- Carrusel -->
+    <section id="container-slider">
+        <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+        <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+        <ul class="listslider">
+            <li><a itlist="itList_0" class="item-select-slid"></a></li>
+            <li><a itlist="itList_1"></a></li>
+            <li><a itlist="itList_2"></a></li>
+            <li><a itlist="itList_3"></a></li>
+            <li><a itlist="itList_4"></a></li>
+            <li><a itlist="itList_5"></a></li>
+            <li><a itlist="itList_6"></a></li>
+        </ul>
+        <ul id="slider">
+            <!-- Slide 1 -->
+            <li style="background-image: url('../img/carrusel-index.jpg'); z-index:0; opacity: 1;">
+                <div class="content_slider">
+                    <div>
+                        <h2>Posta "Santa Bárbara"</h2>
+                        <p>Posta Ubicada en el sector de Santa Bárbara.</p>
+                        <a href="../postas-HTML/santabarbara.html" class="btnSlider">Ver más</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Slide 2 -->
+            <li style="background-image: url('../img/carrusel-index2.jpg'); ">
+                <div class="content_slider">
+                    <div>
+                        <h2>Posta "Los Junquillos"</h2>
+                        <p>Posta Ubicada en el sector de Los Junquillos</p>
+                        <a href="../postas-HTML/losjunquillos.html" class="btnSlider">Ver más</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Slide 3 -->
+            <li style="background-image: url('../img/carrusel-index3.jpg'); ">
+                <div class="content_slider">
+                    <div>
+                        <h2>Posta "El Huachi"</h2>
+                        <p>Posta Ubicada en el sector de El Huachi</p>
+                        <a href="../postas-HTML/elhuachi.html" class="btnSlider">Ver más</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Slide 4 -->
+            <li style="background-image: url('../img/carrusel-index4.jpg'); ">
+                <div class="content_slider">
+                    <div>
+                        <h2>Posta "Los Boldos"</h2>
+                        <p>Posta ubicada en el sector de Los Boldos</p>
+                        <a href="#" class="btnSlider">Ver más</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Slide 5 -->
+            <li style="background-image: url('../img/carrusel-index5.jpg'); ">
+                <div class="content_slider">
+                    <div>
+                        <h2>Posta "Villucura"</h2>
+                        <p>Posta ubicada en el sector de "Villucura"</p>
+                        <a href="#" class="btnSlider">Ver más</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Slide 6 -->
+            <li style="background-image: url('../img/carrusel-index6.jpg'); ">
+                <div class="content_slider">
+                    <div>
+                        <h2>Posta "El Castillo"</h2>
+                        <p>Posta ubicada en el sector "El Castillo"</p>
+                        <a href="#" class="btnSlider">Ver más</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Slide 7 -->
+            <li style="background-image: url('../img/carrusel-index7.jpg'); ">
+                <div class="content_slider">
+                    <div>
+                        <h2>Título del Slide 7</h2>
+                        <p>Descripción del Slide 7</p>
+                        <a href="#" class="btnSlider">Ver más</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- Fin Carrusel -->
+
+    <!-- banner lateral izquierdo nº2 -->
+    <div class="banner-li-2">
+        <img class="img-banner-li-2" src="../img-tarjetas/banner.png">
+    </div>
+    <!-- banner lateral izquierdo nº2 -->
+
+    <!-- Header -->
+    <section>
+        <div class="container informacion">
+            <div class="row row1">
+                <div class="col-md-12">
+                    <h2 style="color: rgb(0, 0, 0);"><b>DSM</b></h2>
+                    <p style="color: rgb(0, 0, 0);"><i>Departamento Salud Municipal de Santa Bárbara</i></p>
+                    <hr>
+                    <p style="color: rgb(0, 0, 0);">¿QUIENES SOMOS? <br> El departamento de salud es el encargado de Lorem
+                        ipsum dolor sit amet
+                        consectetur adipisicing elit. Ratione voluptates ipsa dicta unde, et tempore provident
+                        laboriosam nam! Natus quidem repellat placeat aspernatur voluptatum minima ab dicta voluptatibus
+                        explicabo. Mollitia.
+                    </p>
+                </div>
+                <div class="col-md-12 text-center boton-1">
+                    <a onclick="abrirNuevaPestana()" class="btn btn-outline-dark">Aquí estamos
+                        ubicados</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row row2">
+                <div class="col-md-6">
+                    <h2 style="color: rgb(0, 0, 0);"><b>¿Cuál es nuestra labor?</b></h2>
+                    <p style="color: rgb(0, 0, 0);"><i>Hacemos tu vida mas sencilla...</i></p>
+                    <hr>
+                    <p style="color: rgb(0, 0, 0);">En el DSM santa barbara Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Optio, fugit!
+                        Aliquam perspiciatis illo assumenda reprehenderit! Et, aspernatur ullam. Vel sapiente omnis quos
+                        amet facilis doloribus sequi rem distinctio minima molestias?</p>
+                </div>
+                <div class="col-md-6 videoYT">
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/axV4EHKhzfo?si=AnlFB78Cgm_ZPX6m"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Header -->
+
+
+    <!-- footer -->
+    <div class="pg-footer">
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-content-column">
+                    <div class="footer-logo">
+                        <a class="footer-logo-link" href="#">
+                            <span class="hidden-link-text"></span>
+                            <img style="height: 220px; width: 220px;" src="../img/logo-modified.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-content-column">
+                    <div class="footer-menu">
+                        <h2 class="footer-menu-name">Ubicanos</h2>
+                        <ul id="menu-quick-links" class="footer-menu-list">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                <a target="_blank" rel="noopener noreferrer">www.dsmsantabarbara.cl</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                <a target="_blank" rel="noopener noreferrer">Zenteno #337, santa barbara</a>
+                            </li>
+                    </div>
+
+                    <div class="footer-menu">
+                        <h2 class="footer-menu-name"> DSM</h2>
+                        <ul id="menu-get-started" class="footer-menu-list">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                                <a href="../Secciones-HTML/contactos.html">Contactos</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                                <a href="../Secciones-HTML/quienes-somos.html">¿Quienes Somos?</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                                <a href="../Secciones-HTML/noticias.html">Noticias</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                                <a href="../Secciones-HTML/postas.html">Postas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content-column">
+                    <div class="footer-menu">
+                        <h2 class="footer-menu-name">RRSS</h2>
+                        <ul id="menu-company" class="footer-menu-list">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a>Instagram: @dsm_santabarbara</a>
+                            </li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                                <a>Facebook: dsm_stabarbara</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a>Twitter: @dsm.santabarbara</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu">
+                        <h2 class="footer-menu-name">Telefonos</h2>
+                        <ul id="menu-legal" class="footer-menu-list">
+                            <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                                <a>: 2289832992</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a>: 2298191991</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content-column">
+                    <div class="footer-call-to-action">
+                        <h2 class="footer-call-to-action-title">¿Tienes alguna duda o pregunta?</h2>
+                        <p class="footer-call-to-action-description">Resuelvela acá:</p>
+                        <a class="footer-call-to-action-button button" href="contactos.html" target="_self">Redes de
+                            contacto</a>
+                    </div>
+                    <div class="footer-call-to-action">
+                        <h2 class="footer-call-to-action-title">Horarios:</h2>
+                        <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link"
+                                target="_self"> Lunes A Viernes: 08:30 AM - 17:30
+                                PM</a><br>Findesemana & Festivos: CERRADO
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="footer-copyright-wrapper">
+                    <p class="footer-copyright-text">
+                        <a class="footer-copyright-link"> ©2024. | Diseñado por B01 |
+                            Todos los derechos reservados. </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- fin footer -->
+
+
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>  
